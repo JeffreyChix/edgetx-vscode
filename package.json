@@ -1,0 +1,18 @@
+{
+  "name": "edgetx-vscode",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "edgetx-dev-kit",
+    "edgetx-dev-kit/webview/simulator"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/web-simu",
+    "build": "npm run build --workspace=apps/web-simu",
+    "sync-wasms": "node scripts/sync-wasms.mjs"
+  },
+  "devDependencies": {
+    "@vercel/blob": "^2.3.3"
+  }
+}

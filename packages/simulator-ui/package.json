@@ -1,0 +1,43 @@
+{
+  "name": "@edgetx/simulator-ui",
+  "version": "0.1.0",
+  "description": "Lua simulator UI components for EdgeTX RC radio firmware",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JeffreyChix/edgetx-vscode"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "vite build && tsc --emitDeclarationOnly",
+    "dev": "vite build --watch"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.2",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@vitejs/plugin-react": "^4",
+    "typescript": "^5",
+    "vite": "^5",
+    "vite-plugin-dts": "^3"
+  },
+  "dependencies": {
+    "@emnapi/wasi-threads": "*",
+    "@tybys/wasm-util": "*"
+  }
+}
