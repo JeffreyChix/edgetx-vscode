@@ -378,6 +378,10 @@ export class WasmRunner {
           Atomics.add(this.lcdSync, 0, 1);
           Atomics.notify(this.lcdSync, 0);
         },
+        simuAuxSerialStart: (): void => {},
+        simuAuxSerialStop: (): void => {},
+        simuAuxSerialSetBaudrate: (): void => {},
+        simuAuxSerialSendBuffer: (): void => {},
       },
     });
 
