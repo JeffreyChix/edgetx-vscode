@@ -6,16 +6,10 @@
 edgetx/
 
 # VS Code extension (separate public repo: JeffreyChix/edgetx-dev-kit)
-dev-kit/
+edgetx-dev-kit/
 
 # Web simulator (private repo)
-web-simu/
-
-lua-gen/
-
-test/
-
-
+apps/web-simu/
 
 # ---------------------------------------------------------------------------
 # Dependencies
